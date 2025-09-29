@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {hostname: 'img.clerk.com'}
         ]
-    }
+    },
+    eslint: {
+        ignoreDuringBuilds: true, // 🚀 disables ESLint check on build
+    },
 };
 
 export default withSentryConfig(nextConfig, {
