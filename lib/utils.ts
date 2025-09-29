@@ -16,10 +16,6 @@ export const configureAssistant = (voice: string, style: string) => {
         style as keyof (typeof voices)[keyof typeof voices]
         ] || "sarah";
 
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
     const vapiAssistant: CreateAssistantDTO = {
         name: "Companion",
         firstMessage:
